@@ -1,0 +1,315 @@
+body {
+    font-family: 'Rubik', sans-serif
+}
+
+.v-button {
+    padding: 5px 12px;
+    color: green;
+    border: 3px dotted grey;
+    background-color: rgba(46, 44, 44, 0.808);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.v-button:hover {
+    color: white;
+    background-color: green;
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 180px;
+    width: 100%;
+    padding: 10px;
+}
+
+header ul {
+    margin: 20px 0 40px;
+    float: left;
+    padding: 40px 0 0;
+}
+
+header li {
+    transition: 0.4s;
+    list-style-type: none;
+    display: inline;
+    padding: 10px 0 0;
+    border-top: 3px solid transparent;
+}
+
+header a {
+    transition: 0.4s;
+    color: hsla(90, 100%, 12%, 0.924);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 15px;
+}
+
+header li:hover {
+    border-color: rgb(3, 4, 98);
+}
+
+header a:hover {
+    color: hsl(2, 98%, 34%);
+}
+
+.fa-bars,
+.closej {
+    display: none;
+}
+
+.owltext {
+    transition: 0.6s;
+    position: absolute;
+    bottom: -60px;
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+    /* Текст внизу */
+}
+
+.owltext h2 {
+    color: rgb(0, 149, 155);
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 15px;
+}
+
+.owltext a {
+    padding: 5px 12px;
+    color: green;
+    border: 3px solid grey;
+    background-color: rgba(46, 44, 44, 0.808);
+    font-size: 22px;
+}
+
+.owltext a:hover {
+    color: white;
+    background-color: green;
+    text-decoration: none;
+}
+
+.owl-item:hover .owltext {
+    bottom: 0;
+    background: linear-gradient(45deg, rgb(35, 90, 25), rgb(34, 22, 22));
+    /* При наведенні мишкою на фото зявляється купити овоч */
+}
+
+video {
+    width: 100%;
+}
+
+#bg {
+    background-image: url('../images/2.jpg');
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    padding: 200px 30px;
+    height: 800px;
+}
+
+#bg .bg-text {
+    padding: 30xp;
+    background-color: rgb(4, 88, 4);
+    width: calc(100% - 60px);
+}
+
+#bg h1 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+#sort img {
+    width: 100%;
+}
+
+#sort {
+    padding: 50px 0;
+    min-height: 650px;
+}
+
+#sort .col-sm-12 {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#sort .col-sm-12 a {
+    transition: 0.6s;
+    text-align: center;
+    color: white;
+    background-color: rgb(5, 97, 5);
+    padding: 5px 10px;
+    margin: 15px;
+    white-space: nowrap;
+    /* nowrap Для того щоб текст не переносився у нову лінійка */
+}
+
+#sort .col-sm-12 a:hover {
+    text-decoration: none;
+    color: rgb(2, 104, 2);
+    background-color: black;
+}
+
+#sort figcaption {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.746);
+    color: black;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+#sort figure:hover {
+    box-shadow: 2px 4px 6px black;
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.89);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+    /* z-index ховає карусель на низ для того щоб не вилізла owl-carosel*/
+}
+
+.v-content {
+    background-color: white;
+    max-width: 320px;
+    padding: 20px;
+}
+
+.v-content input {
+    border: none;
+    border-bottom: 2px solid green;
+    margin: 10px auto;
+    padding: 10px auto;
+    font-size: 20px;
+    width: 100%;
+}
+
+.v-content input:focus {
+    outline: none;
+    /* outline рамка при фокусуванні */
+}
+
+.v-content input[type="submit"] {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(15, 128, 5);
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.v-content input[type="submit"]:hover {
+    background-color: black;
+}
+
+.v-close {
+    transform: rotate(45deg);
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    margin-left: 310px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+@media(max-width:1023px) {
+    header nav {
+        transition: 0.6s;
+        position: fixed !important;
+        /* background-color: rgba(0, 0, 0, 0.815); */
+        background: linear-gradient(45deg, rgb(26, 51, 26), rgb(34, 22, 22));
+        width: 100vw !important;
+        height: 100vh;
+        left: -100vw;
+        top: 0;
+        max-width: 100vw !important;
+    }
+    header ul {
+        padding: 50px 0;
+        float: none;
+        width: 100%;
+    }
+    header li {
+        display: block;
+        padding-top: 20px;
+    }
+    header a {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+    }
+    .fa-bars {
+        position: absolute;
+        right: 15px;
+        top: 40px;
+        font-size: 30px;
+        display: block;
+    }
+    .closej {
+        /* Назвали інакше клас для того, щоб не співпадала назва з бібліотечним класом з bootstrap */
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        display: block;
+        color: white;
+        transform: rotate(45deg);
+        font-size: 50px;
+        font-weight: 100;
+        opacity: 1;
+    }
+}
+
+.owl-nav {
+    /* Стилізація маленьких перемикачів фото */
+    display: block;
+    width: 100%;
+}
+
+.owl-nav .owl-next span,
+.owl-nav .owl-prev span {
+    font-size: 50px;
+    padding: 0px 20px;
+    border: 2px dotted rgb(143, 11, 11);
+    color: rgb(2, 1, 0);
+    background-color: rgb(0, 255, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 60%;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: calc(50% - 38px);
+    /* Мінус має знаходитися по центру з пропусками */
+    /* Виставляємо по центрі іконки перемикання 38 пікселів це половина від висоти кнопки зеленої */
+}
+
+.owl-nav .owl-next {
+    right: 0;
+}
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+
+/* .owl-nav .owl-next span,
+.owl-nav .owl-prev span {
+    font-size: 20px;
+    padding: 3px 7px;
+    border-radius: 0;
+} 
+Стилізація кнопок */
